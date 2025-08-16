@@ -1,0 +1,21 @@
+@import '../styles/globals.scss';
+
+.footer {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 4rem;
+    border-top: 1px solid $accent-color;
+    color: $secondary-color;
+    font-size: 0.875rem;
+}
+
+.text {
+    margin: 0.5rem 0;
+}
+
+// media queries
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 2rem;
+    }
+}

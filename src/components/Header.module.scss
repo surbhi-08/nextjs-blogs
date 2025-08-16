@@ -1,0 +1,52 @@
+@import '../styles/globals.scss';
+
+.header {
+    text-align: center;
+    padding: 5rem 1rem 3rem;
+    background-color: $secondary-color;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.blogTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $text-color;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+}
+
+.mainHeading {
+    font-size: 1rem;
+    color: $primary-color;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.subHeading {
+    font-size: 0.92rem;
+    color: $text-color;
+    max-width: 600px;
+    margin: 1rem auto 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// media queries
+@media (max-width: 768px) {
+    .header {
+        margin-bottom: 1rem;
+    }
+}

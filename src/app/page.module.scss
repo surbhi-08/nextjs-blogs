@@ -1,0 +1,185 @@
+@import '../styles/globals.scss';
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0rem 3rem;
+}
+
+.postGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-top: 1.5rem;
+}
+
+.searchTabsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.noResults {
+  font-size: 1.5rem;
+  color: $secondary-color;
+  text-align: center;
+}
+
+.searchContainer {
+  display: flex;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease-in-out forwards;
+  animation-delay: 0.5s;
+  flex-grow: 1;
+}
+
+.searchInputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  /* Base width */
+  transition: max-width 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:focus-within {
+    max-width: 600px;
+  }
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1rem;
+  width: 24px;
+  height: 24px;
+  color: $accent-color;
+  z-index: 10;
+}
+
+.searchInput {
+  width: 100%;
+  /* Make it fill its parent wrapper */
+  padding: 0.88rem 3rem;
+  font-size: 0.89rem;
+  border: 1px solid $accent-color;
+  border-radius: $border-radius;
+  outline: none;
+  border-color: $accent-color;
+  color: $secondary-color;
+  margin-right: 1rem;
+
+  &:focus {
+    border-color: $primary-color;
+    box-shadow: 0 0 8px rgba($primary-color, 0.2);
+  }
+}
+
+.searchInput::placeholder {
+  color: $accent-color;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.loadMoreButton {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $primary-color;
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    color: #fff;
+    background-color: $primary-color;
+  }
+}
+
+/* Tabs and Chips with Animation */
+
+.tabsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 0.8s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+
+.tabChip {
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  border: 1px solid $accent-color;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $accent-color;
+  transition: all 0.3s ease-in-out;
+
+  // New animation for the active tab when clicked
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.tabChip:hover:not(.activeTab) {
+  border-color: $primary-color;
+  color: $primary-color;
+}
+
+.activeTab {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: #fff;
+
+  // New animation for the active tab to slightly scale up
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0rem 1rem;
+  }
+
+  .searchContainer,
+  .tabsContainer {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "1",
+        "title": "UX review presentations",
+        "category": "Design",
+        "type": "Design",
+        "description": "How do you create compelling presentations that wow your colleagues and impress your managers?",
+        "author": "Olivia Rhye",
+        "date": "20 Jan 2022",
+        "image": "/images/ux-review.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Migrating to Linear 101",
+        "category": "Product",
+        "type": "Product",
+        "description": "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.",
+        "author": "Phoenix Baker",
+        "date": "19 Jan 2022",
+        "image": "/images/migrating-to-linear.jpeg"
+    },
+    {
+        "id": "3",
+        "title": "Building your API Stack",
+        "category": "Software Engineering",
+        "type": "Engineering",
+        "description": "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
+        "author": "Lana Steiner",
+        "date": "18 Jan 2022",
+        "image": "/images/building-api.jpeg"
+    },
+    {
+        "id": "4",
+        "title": "Data-driven marketing",
+        "category": "Marketing",
+        "type": "Marketing",
+        "description": "Using data to inform your marketing strategy is no longer optional. Here's how to get started.",
+        "author": "Olivia Rhye",
+        "date": "17 Jan 2022",
+        "image": "/images/data-marketing.jpg"
+    },
+    {
+        "id": "5",
+        "title": "The importance of user research",
+        "category": "Product",
+        "type": "Product",
+        "description": "Understanding your users is key to building successful products. Here's how to conduct effective research.",
+        "author": "Phoenix Baker",
+        "date": "16 Jan 2022",
+        "image": "/images/user-search.png"
+    },
+    {
+        "id": "6",
+        "title": "Introduction to Next.js",
+        "category": "Software Engineering",
+        "type": "Engineering",
+        "description": "A beginner's guide to the React framework that simplifies web development.",
+        "author": "Lana Steiner",
+        "date": "15 Jan 2022",
+        "image": "/images/nextjs-intro.jpeg"
+    }
+]
