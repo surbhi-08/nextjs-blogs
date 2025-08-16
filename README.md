@@ -23,7 +23,7 @@ A simple, appealing, and functional blog website built with Next.js and its defa
 #### Installation
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/surbhi-08/nextjs-blogs
     cd nextjs-blogs
     ```
 
